@@ -1,8 +1,9 @@
 import "./styles.css";
-import Notas from "./Notas.js";
+//import Notas from "./Notas.js";
 /*import Counter from "./Counter";
 import Notas from "./Notas.js";
 import Cursos from "./Cursos.js";*/
+import PhoneBook from "./PhoneBook.js";
 //import Conditional from "./Conditional.js";
 
 const notes = [
@@ -71,6 +72,13 @@ const courses = [
   }
 ];
 
+const phones = [
+  {
+    name: "",
+    number: null
+  }
+];
+
 export default function App() {
   return (
     <div>
@@ -80,7 +88,7 @@ export default function App() {
       <Conditional totalMessages={10} />
       <Cursos courses={courses} />
       */}
-      <Notas notes={notes} />
+      <PhoneBook phones={phones} />
     </div>
   );
 }
